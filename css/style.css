@@ -1,0 +1,166 @@
+
+/** page structure **/
+#w {
+    display: block;
+    max-width: 1100px;
+    min-width: 280px;
+    /*padding-top: 20px;*/
+    margin: 0 auto;
+  }
+  
+.row1 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}  
+  /** filters list **/
+#filter-list {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 25px;
+      border-radius: 30px;
+  }
+  
+#filter-list li {
+      font-weight: bold;
+      color:black !important;
+      display: inline-block;
+      width: auto;
+      padding: 6px 10px;
+      margin-right: 15px;
+      font-size: 1.2em;
+      cursor: pointer;
+      /*-webkit-border-radius: 3px;
+      -moz-border-radius: 3px;*/
+      /*border-radius: 3px;*/
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
+  }
+#filter-list li:hover {
+      color: rgb(220, 236, 39) !important;
+  }
+#filter-list li.active {
+      font-weight: bold;
+      /*background: #D4CECC;*/
+      border-color: #000;
+      text-shadow: 
+          0 0 5px rgba(255, 255, 255, 0.7),
+          0 0 10px rgba(0, 255, 47, 0.7),
+          0 0 20px rgba(0, 255, 47, 0.7),
+          0 0 30px rgba(0, 255, 47, 0.7),
+          0 0 40px rgba(0, 255, 47, 0.7),
+          0 0 50px rgba(0, 255, 47, 0.7);
+  }
+  
+.clearfix {
+    background-color: rgba(255, 166, 0, 0.296);
+}
+  
+
+  /** portfolio list **/
+#portfolio {
+    display: block;
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 0;
+    text-align: center;
+}
+  
+#portfolio .item {
+      display: none;
+      opacity: 0;
+      width: 207px; /* หรือใช้ 30% ถ้าต้องการให้เป็นเปอร์เซ็นต์ */
+      vertical-align: top;
+      margin: 0 20px 25px 0;
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      box-sizing: border-box;
+  }
+  
+  
+#portfolio .item  {
+      font-size: 16px;
+      padding: 10px;
+  }
+#portfolio .item1 {
+      display: none;
+      opacity: 0;
+      vertical-align: top;
+      margin: 0 20px 25px 0;
+      color: #fff;
+      font-size: 30px;
+      text-align: center;
+      box-sizing: border-box;
+  }
+  
+#filter-list li {
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+    display: inline-block;
+    width: auto;
+    padding: 6px 10px;
+    margin-right: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    /* border-radius: 3px; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+
+#portfolio .item a {
+    display: inline-block;
+    max-width: 100%;
+    text-decoration: none;
+    background: #fff;
+  
+  }
+#portfolio .item img {
+    max-width: 100%;
+  }
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+li {
+    color: white !important;
+    /* padding-left: 10px; */
+    word-spacing: 5px !important;
+}
+li.item {
+    position: relative;
+    width: 100%;
+    border-radius: 25px;
+    background: rgba(224, 217, 2, 0.536);
+}
+ 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+img {
+  border-radius: 25px;
+}
+h22 {
+  font-size: 16px;
+  padding: 10px;
+}
+@media (min-width: 991px) {
+      #portfolio .item:nth-child(5),
+      #portfolio .item:nth-child(6),
+      #portfolio .item:nth-child(7),
+      #portfolio .item:nth-child(8) {
+          margin-bottom: 0;
+      }
+  }
